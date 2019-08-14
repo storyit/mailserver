@@ -23,8 +23,8 @@ services:
     - maildata:/var/mail
     - mailstate:/var/mail-state
     - ./config/:/tmp/docker-mailserver/
-    - /etc/letsencrypt/live/storyoftheseason.co/fullchain.pem:/etc/postfix/ssl/cert
-    - /etc/letsencrypt/live/storyoftheseason.co/privkey.pem:/etc/postfix/ssl/key
+    - /etc/letsencrypt/live/storyoftheseason.com/fullchain.pem:/etc/postfix/ssl/cert
+    - /etc/letsencrypt/live/storyoftheseason.com/privkey.pem:/etc/postfix/ssl/key
     env_file:
     - .env
     environment:
